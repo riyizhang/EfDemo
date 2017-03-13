@@ -30,8 +30,8 @@ GO
 -- Creating table 'People'
 CREATE TABLE [dbo].People (
     [Id] int IDENTITY(1,1) NOT NULL,
-    [name] nvarchar(max)  NOT NULL,
-    [age] nvarchar(max)  NOT NULL
+    [Name] nvarchar(max)  NOT NULL,
+    [Age] nvarchar(max)  NOT NULL
 );
 GO
 
