@@ -27,8 +27,8 @@ GO
 -- Creating all tables
 -- --------------------------------------------------
 
--- Creating table 'Entity1Set'
-CREATE TABLE [dbo].[Entity1Set] (
+-- Creating table 'People'
+CREATE TABLE [dbo].People (
     [Id] int IDENTITY(1,1) NOT NULL,
     [name] nvarchar(max)  NOT NULL,
     [age] nvarchar(max)  NOT NULL
@@ -39,9 +39,10 @@ GO
 -- Creating all PRIMARY KEY constraints
 -- --------------------------------------------------
 
--- Creating primary key on [Id] in table 'Entity1Set'
-ALTER TABLE [dbo].[Entity1Set]
-ADD CONSTRAINT [PK_Entity1Set]
+-- Creating primary key on [Id] in table 'People'
+ALTER TABLE [dbo].[People]
+ADD CONSTRAINT [PK_People
+]
     PRIMARY KEY CLUSTERED ([Id] ASC);
 GO
 

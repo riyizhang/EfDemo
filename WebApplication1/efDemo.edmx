@@ -6,9 +6,9 @@
     <edmx:StorageModels>
     <Schema xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl" Alias="Self" Namespace="efDemo.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008">
   <EntityContainer Name="efDemoStoreContainer">
-    <EntitySet Name="Entity1Set" EntityType="efDemo.Store.Entity1Set" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="People" EntityType="efDemo.Store.People" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
-  <EntityType Name="Entity1Set">
+  <EntityType Name="People">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
@@ -39,7 +39,7 @@
   <EntityContainerMapping StorageEntityContainer="efDemoStoreContainer" CdmEntityContainer="efDemoContainer">
     <EntitySetMapping Name="PeopleSet">
       <EntityTypeMapping TypeName="IsTypeOf(efDemo.People)">
-        <MappingFragment StoreEntitySet="Entity1Set">
+        <MappingFragment StoreEntitySet="People">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="name" />
           <ScalarProperty Name="Age" ColumnName="age" />
