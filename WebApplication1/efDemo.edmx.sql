@@ -41,8 +41,7 @@ GO
 
 -- Creating primary key on [Id] in table 'People'
 ALTER TABLE [dbo].[People]
-ADD CONSTRAINT [PK_People
-]
+ADD CONSTRAINT [PK_People]
     PRIMARY KEY CLUSTERED ([Id] ASC);
 GO
 
